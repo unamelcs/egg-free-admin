@@ -31,3 +31,8 @@ $ npm stop
 
 
 [egg]: https://eggjs.org
+
+### egg-vue
+- keyworld: egg-view-vue-ssr, webpack
+- see [Egg Vue 工程解决方案](https://www.yuque.com/easy-team/egg-vue/learn)
+

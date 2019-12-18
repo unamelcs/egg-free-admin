@@ -5,12 +5,18 @@
 /**
  * @param {Egg.EggAppInfo} appInfo app info
  */
+const path = require('path');
+
 module.exports = appInfo => {
   /**
    * built-in config
    * @type {Egg.EggAppConfig}
    **/
-  const config = exports = {};
+  const config = exports = {
+    vuessr: {
+      layout: path.join(appInfo.baseDir, 'app/web/index.html'),
+    },
+  };
 
   // use for cookie sign key, should change to your own and keep security
   config.keys = appInfo.name + '_1576636645978_8492';
